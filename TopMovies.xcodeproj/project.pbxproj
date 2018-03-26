@@ -12,8 +12,6 @@
 		674624AF20685D4A00AFC675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674624AD20685D4A00AFC675 /* Main.storyboard */; };
 		674624B120685D4A00AFC675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674624B020685D4A00AFC675 /* Assets.xcassets */; };
 		674624B420685D4A00AFC675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674624B220685D4A00AFC675 /* LaunchScreen.storyboard */; };
-		67750227206869BD00A483D8 /* iTunes-Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 67750226206869BD00A483D8 /* iTunes-Movies.json */; };
-		67750229206869C400A483D8 /* Random-User.json in Resources */ = {isa = PBXBuildFile; fileRef = 67750228206869C400A483D8 /* Random-User.json */; };
 		67BCE66C206878AA008D09DF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BCE66B206878AA008D09DF /* Default-568h@2x.png */; };
 		67BCE66E20687BD4008D09DF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCE66D20687BD4008D09DF /* Network.swift */; };
 		8C6FE941101F1089F313CD0B /* libPods-TopMovies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED52D081D9C1F3E876A7210E /* libPods-TopMovies.a */; };
@@ -29,10 +27,10 @@
 		674624B020685D4A00AFC675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		674624B320685D4A00AFC675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		674624B520685D4A00AFC675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67750226206869BD00A483D8 /* iTunes-Movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "iTunes-Movies.json"; path = "../../../JSON-API-Swift-Starter-master/API-Sandbox/JSON/iTunes-Movies.json"; sourceTree = "<group>"; };
-		67750228206869C400A483D8 /* Random-User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Random-User.json"; path = "../../../JSON-API-Swift-Starter-master/API-Sandbox/JSON/Random-User.json"; sourceTree = "<group>"; };
 		67BCE66B206878AA008D09DF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		67BCE66D20687BD4008D09DF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		67BCE67020688462008D09DF /* iTunes-Movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iTunes-Movies.json"; sourceTree = "<group>"; };
+		67BCE67220688471008D09DF /* Random-User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Random-User.json"; sourceTree = "<group>"; };
 		ED52D081D9C1F3E876A7210E /* libPods-TopMovies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TopMovies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				674624B520685D4A00AFC675 /* Info.plist */,
+				67BCE66F2068845A008D09DF /* JSON */,
 				674624BF2068623F00AFC675 /* SupportFiles */,
 				674624BE2068617000AFC675 /* Networking */,
 				674624BD2068615E00AFC675 /* Controllers */,
@@ -114,8 +113,6 @@
 		674624BE2068617000AFC675 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				67750226206869BD00A483D8 /* iTunes-Movies.json */,
-				67750228206869C400A483D8 /* Random-User.json */,
 				67BCE66D20687BD4008D09DF /* Network.swift */,
 			);
 			path = Networking;
@@ -130,6 +127,15 @@
 				674624B220685D4A00AFC675 /* LaunchScreen.storyboard */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		67BCE66F2068845A008D09DF /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				67BCE67020688462008D09DF /* iTunes-Movies.json */,
+				67BCE67220688471008D09DF /* Random-User.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,10 +198,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67750229206869C400A483D8 /* Random-User.json in Resources */,
 				674624B420685D4A00AFC675 /* LaunchScreen.storyboard in Resources */,
 				674624B120685D4A00AFC675 /* Assets.xcassets in Resources */,
-				67750227206869BD00A483D8 /* iTunes-Movies.json in Resources */,
 				674624AF20685D4A00AFC675 /* Main.storyboard in Resources */,
 				67BCE66C206878AA008D09DF /* Default-568h@2x.png in Resources */,
 			);
