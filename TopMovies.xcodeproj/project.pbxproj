@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5DCECC0A3E24A60D92D86E8A /* Pods_TopMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AF90EEB59822F197638A9F /* Pods_TopMovies.framework */; };
 		674624AA20685D4A00AFC675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674624A920685D4A00AFC675 /* AppDelegate.swift */; };
 		674624AC20685D4A00AFC675 /* ShowMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674624AB20685D4A00AFC675 /* ShowMovieViewController.swift */; };
 		674624AF20685D4A00AFC675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674624AD20685D4A00AFC675 /* Main.storyboard */; };
 		674624B120685D4A00AFC675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674624B020685D4A00AFC675 /* Assets.xcassets */; };
 		674624B420685D4A00AFC675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674624B220685D4A00AFC675 /* LaunchScreen.storyboard */; };
+		67750227206869BD00A483D8 /* iTunes-Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 67750226206869BD00A483D8 /* iTunes-Movies.json */; };
+		67750229206869C400A483D8 /* Random-User.json in Resources */ = {isa = PBXBuildFile; fileRef = 67750228206869C400A483D8 /* Random-User.json */; };
+		67BCE66C206878AA008D09DF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67BCE66B206878AA008D09DF /* Default-568h@2x.png */; };
+		67BCE66E20687BD4008D09DF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCE66D20687BD4008D09DF /* Network.swift */; };
+		8C6FE941101F1089F313CD0B /* libPods-TopMovies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED52D081D9C1F3E876A7210E /* libPods-TopMovies.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		352D2524B7A3167750922BA0 /* Pods-TopMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopMovies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopMovies/Pods-TopMovies.debug.xcconfig"; sourceTree = "<group>"; };
-		39AF90EEB59822F197638A9F /* Pods_TopMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC125656AB171E1668ED91A /* Pods-TopMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopMovies.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopMovies/Pods-TopMovies.release.xcconfig"; sourceTree = "<group>"; };
 		674624A620685D4A00AFC675 /* TopMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		674624A920685D4A00AFC675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,11 @@
 		674624B020685D4A00AFC675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		674624B320685D4A00AFC675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		674624B520685D4A00AFC675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67750226206869BD00A483D8 /* iTunes-Movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "iTunes-Movies.json"; path = "../../../JSON-API-Swift-Starter-master/API-Sandbox/JSON/iTunes-Movies.json"; sourceTree = "<group>"; };
+		67750228206869C400A483D8 /* Random-User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Random-User.json"; path = "../../../JSON-API-Swift-Starter-master/API-Sandbox/JSON/Random-User.json"; sourceTree = "<group>"; };
+		67BCE66B206878AA008D09DF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		67BCE66D20687BD4008D09DF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		ED52D081D9C1F3E876A7210E /* libPods-TopMovies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TopMovies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DCECC0A3E24A60D92D86E8A /* Pods_TopMovies.framework in Frameworks */,
+				8C6FE941101F1089F313CD0B /* libPods-TopMovies.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +51,7 @@
 		2600B306A706AC62196A0DAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				39AF90EEB59822F197638A9F /* Pods_TopMovies.framework */,
+				ED52D081D9C1F3E876A7210E /* libPods-TopMovies.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -60,6 +68,7 @@
 		6746249D20685D4A00AFC675 = {
 			isa = PBXGroup;
 			children = (
+				67BCE66B206878AA008D09DF /* Default-568h@2x.png */,
 				674624A820685D4A00AFC675 /* TopMovies */,
 				674624A720685D4A00AFC675 /* Products */,
 				66A69C6CA872E2C478547B70 /* Pods */,
@@ -78,6 +87,7 @@
 		674624A820685D4A00AFC675 /* TopMovies */ = {
 			isa = PBXGroup;
 			children = (
+				674624B520685D4A00AFC675 /* Info.plist */,
 				674624BF2068623F00AFC675 /* SupportFiles */,
 				674624BE2068617000AFC675 /* Networking */,
 				674624BD2068615E00AFC675 /* Controllers */,
@@ -104,6 +114,9 @@
 		674624BE2068617000AFC675 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				67750226206869BD00A483D8 /* iTunes-Movies.json */,
+				67750228206869C400A483D8 /* Random-User.json */,
+				67BCE66D20687BD4008D09DF /* Network.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -111,11 +124,10 @@
 		674624BF2068623F00AFC675 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				674624AD20685D4A00AFC675 /* Main.storyboard */,
 				674624A920685D4A00AFC675 /* AppDelegate.swift */,
 				674624B020685D4A00AFC675 /* Assets.xcassets */,
-				674624AD20685D4A00AFC675 /* Main.storyboard */,
 				674624B220685D4A00AFC675 /* LaunchScreen.storyboard */,
-				674624B520685D4A00AFC675 /* Info.plist */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -131,8 +143,6 @@
 				674624A220685D4A00AFC675 /* Sources */,
 				674624A320685D4A00AFC675 /* Frameworks */,
 				674624A420685D4A00AFC675 /* Resources */,
-				B2DC6BAEFE8C8F335AF09042 /* [CP] Embed Pods Frameworks */,
-				337E25E2083D6697B41D249C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,30 +192,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67750229206869C400A483D8 /* Random-User.json in Resources */,
 				674624B420685D4A00AFC675 /* LaunchScreen.storyboard in Resources */,
 				674624B120685D4A00AFC675 /* Assets.xcassets in Resources */,
+				67750227206869BD00A483D8 /* iTunes-Movies.json in Resources */,
 				674624AF20685D4A00AFC675 /* Main.storyboard in Resources */,
+				67BCE66C206878AA008D09DF /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		337E25E2083D6697B41D249C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopMovies/Pods-TopMovies-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4961882FB44CCB24F0C43DF9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,30 +222,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B2DC6BAEFE8C8F335AF09042 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TopMovies/Pods-TopMovies-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopMovies/Pods-TopMovies-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,6 +231,7 @@
 			files = (
 				674624AC20685D4A00AFC675 /* ShowMovieViewController.swift in Sources */,
 				674624AA20685D4A00AFC675 /* AppDelegate.swift in Sources */,
+				67BCE66E20687BD4008D09DF /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

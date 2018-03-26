@@ -1,4 +1,4 @@
-framework module AlamofireNetworkActivityIndicator {
+module AlamofireNetworkActivityIndicator [system] {
   umbrella header "AlamofireNetworkActivityIndicator-umbrella.h"
 
   export *
