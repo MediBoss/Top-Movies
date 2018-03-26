@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Show Movie View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TopMovies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ShowMovieViewController" customModule="TopMovies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,6 +57,9 @@
                                         <rect key="frame" x="87.666666666666657" y="422.66666666666657" width="100" height="211.33333333333331"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                         <state key="normal" title="View on itunes"/>
+                                        <connections>
+                                            <action selector="ituneLinkButtonIsTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pr-Ty-Qe6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -70,9 +73,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="moviePosterView" destination="ZIj-YS-mCw" id="qWe-7n-Ghf"/>
+                        <outlet property="movieTitleLabel" destination="LHG-XL-B0t" id="bbZ-Ez-gX1"/>
+                        <outlet property="priceLabel" destination="kPL-Mx-Cig" id="KOC-gD-edT"/>
+                        <outlet property="releaseDateLabel" destination="Dtc-jk-Xcb" id="hNX-kI-Cvf"/>
+                        <outlet property="rightsOfOwnerLabel" destination="ofx-t2-y2b" id="UIi-Ie-uNh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1494" y="-110"/>
         </scene>
     </scenes>
 </document>
