@@ -7,5 +7,7 @@
 * Intro to JSON
 * Understandong JSON format
 * Parsing JSON
-* Making HTTP requests
+* Making HTTP requests using Alamofire
+* Networking with URLSession
 * Turning JSON data into object models
+
