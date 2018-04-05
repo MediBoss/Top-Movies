@@ -1,6 +1,6 @@
 ### Top Movies : An intro to iOS Networking, JSON, and APIs
 
-##### Purpose : This is a simple app based off Make's School API online course to introduce and familiarize my self Networking
+##### Purpose : This is a simple app based off Make's School API online course and Marquavious Draggon's Movie Json Parsser Course to introduce and familiarize my self Networking
 
 ##### Goals :
 
