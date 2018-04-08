@@ -28,12 +28,11 @@ struct MoviService {
             let feedJsonKey = jsonData["feed"]["entry"].arrayValue
             
             for movie in feedJsonKey {
-                if let newMovie = Movie(json: movie){
+                if let newMovie = Movie(movie){
                     movieLists.append(newMovie)
                 }
-                
             }
-           completion(movieLists) // completes with movielists
+           completion(movieLists) // stores the array that contains the list of movies for future use
         }
         
     }
@@ -60,7 +59,7 @@ struct MoviService {
                     
                     guard let feedJsonKey = jsonData["feed"] as? MovieJSON, let movieEntries = feedJsonKey["entry"] as? [MovieJSON] else {return}
                     for movie in movieEntries {
-                        if let movie = Movie(json: movie){
+                        if let movie = Movie(movie){
                             movieLists.append(movie)
                         }
                     }
