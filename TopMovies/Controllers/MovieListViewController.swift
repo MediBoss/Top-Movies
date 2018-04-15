@@ -13,6 +13,7 @@ class MovieListViewController: UIViewController, UITableViewDataSource, UITableV
     
     // MARK: - @IBOULETS
     @IBOutlet weak var tableView: UITableView!
+    var movieLists: [Movie] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class MovieListViewController: UIViewController, UITableViewDataSource, UITableV
     // MARK: - Table View Data Source Methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 25
+        return movieLists.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
