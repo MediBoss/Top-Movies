@@ -11,7 +11,7 @@ import SwiftyJSON
 import Alamofire
 
 typealias  MovieJSON = [String: Any] // Dictionary where the JSON data will be stored
-struct MoviService {
+struct MovieService {
     
     
     static func fetchMoviesWithAlamofire(completion: @escaping ([Movie]) -> ()){

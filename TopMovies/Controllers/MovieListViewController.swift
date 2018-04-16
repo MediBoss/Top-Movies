@@ -14,9 +14,25 @@ class MovieListViewController: UIViewController, UITableViewDataSource, UITableV
     // MARK: - @IBOULETS
     @IBOutlet weak var tableView: UITableView!
     var movieLists: [Movie] = []
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        MovieService.fetchMoviesWithAlamofire { (moviesFromAPI) in
+            // Set the classes array of movies with
+            self.movieLists = moviesFromAPI
+            self.tableView.reloadData()
+        }
+        
+        MovieService.fetchMoviesManually { (error, moviesFromAPI) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            self.movieLists = moviesFromAPI
+            self.tableView.reloadData()
+        }
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -30,8 +46,11 @@ class MovieListViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MovieCellTableViewCell
-        cell.movieNameLabel.text = "Movie Name"
-        cell.movieGenre.text = "Genre"
+        
+        let movie = movieLists[indexPath.row]
+        
+        cell.movieNameLabel.text = movie.name
+        cell.movieGenre.text = movie.genre
         
         return cell
     }
