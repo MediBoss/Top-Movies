@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Movie {
+struct Movie: Decodable {
     
     var name: String?
     var rightsOwner: String?
@@ -19,8 +19,8 @@ struct Movie {
     var genre: String?
     var poster: UIImage?
     
-    // default initializer
-    init(name: String, rights: String, price: Double, link: String, releaseDate: String, genre: String, poster: UIImage){
+    // optional initializer
+    init?(name: String, rights: String, price: Double, link: String, releaseDate: String, genre: String, poster: UIImage){
         
         self.name = name
         self.rightsOwner = rights
@@ -30,7 +30,15 @@ struct Movie {
         self.genre = genre
         self.poster = poster
     }
+    
+    init(from decoder: Decoder) throws {
+        let movieContainer = try decoder.container(keyedBy: JSONKeys.self)
+        let movieName: String = try movieContainer.decode(String.self, forKey: .name)
+        let movieRightsOfOwner = try movieContainer.decode(String.self, forKey: .rightsOfOwner)
+        let moviePrice = try movieContainer.decode(String.self, forKey: .price)
+        let movieLink = try movieContainer.decode(String.self, forKey: .link)
+        let movieReleaseData = try movieContainer.decode(String.self, forKey: .releaseDate)
+        let movieGenre = try movieContainer.decode(String.self, forKey: .genre)
+        let moviePoster = try movieContainer.decode(String.self, forKey: .poster)
+    }
 }
-
-
-

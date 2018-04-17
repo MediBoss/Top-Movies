@@ -13,5 +13,4 @@ struct MovieService {
     static func fetchMoviesManually(completionHandler: @escaping (Error?,[Movie]) -> ()){
         
     }
-    
 }
